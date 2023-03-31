@@ -1,0 +1,172 @@
+/* FONTS */
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url('../fonts/Graphik-Regular.eot');
+    src: url('../fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Graphik-Regular.woff2') format('woff2'),
+        url('../fonts/Graphik-Regular.woff') format('woff'),
+        url('../fonts/Graphik-Regular.ttf') format('truetype'),
+        url('../fonts/Graphik-Regular.svg#Graphik-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik-Medium';
+    src: url('../fonts/Graphik-Medium.eot');
+    src: url('../fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Graphik-Medium.woff2') format('woff2'),
+        url('../fonts/Graphik-Medium.woff') format('woff'),
+        url('../fonts/Graphik-Medium.ttf') format('truetype'),
+        url('../fonts/Graphik-Medium.svg#Graphik-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik-Light';
+    src: url('../fonts/Graphik-Light.eot');
+    src: url('../fonts/Graphik-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Graphik-Light.woff2') format('woff2'),
+        url('../fonts/Graphik-Light.woff') format('woff'),
+        url('../fonts/Graphik-Light.ttf') format('truetype'),
+        url('../fonts/Graphik-Light.svg#Graphik-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik-LightItalic';
+    src: url('../fonts/Graphik-LightItalic.eot');
+    src: url('../fonts/Graphik-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Graphik-LightItalic.woff2') format('woff2'),
+        url('../fonts/Graphik-LightItalic.woff') format('woff'),
+        url('../fonts/Graphik-LightItalic.ttf') format('truetype'),
+        url('../fonts/Graphik-LightItalic.svg#Graphik-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Graphik-Semibold';
+    src: url('../fonts/Graphik-Semibold.eot');
+    src: url('../fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Graphik-Semibold.woff2') format('woff2'),
+        url('../fonts/Graphik-Semibold.woff') format('woff'),
+        url('../fonts/Graphik-Semibold.ttf') format('truetype'),
+        url('../fonts/Graphik-Semibold.svg#Graphik-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root{
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-gris-fondo:#f2f2f2;
+    --color-azul-marino:#121766;
+    --ff-graphik-light:'Graphik-Light', Helvetica, Arial, sans-serif;   
+    --ff-graphik-light-italic:'Graphik-LightItalic', Helvetica, Arial, sans-serif;   
+    --ff-graphik-regular:'Graphik-Regular', Helvetica, Arial, sans-serif;   
+    --ff-graphik-medium:'Graphik-Medium', Helvetica, Arial, sans-serif;   
+    --ff-graphik-semibold:'Graphik-Semibold', Helvetica, Arial, sans-serif;   
+}
+
+body{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+/* FONTS */
+.tit_secundario{
+    font-family: var(--ff-graphik-medium);
+    font-size: 1.8rem;
+    color: var(--color-azul-marino);
+}
+.subtit{
+    font-family: var(--ff-graphik-regular);
+    font-size: 1.8rem;
+}
+
+/* SLIDER */
+.home-slider{
+    background-color: red;
+}
+.tit_slider{
+    font-family: var(--ff-graphik-light);
+    color: var(--color-white);
+    font-size: 5vw;
+}
+.author_slider{
+    font-family: var(--ff-graphik-light-italic);
+    color: var(--color-white);
+    font-size: 5vw;
+}
+.cont_text{
+    margin-left: 4%;
+    margin-bottom: 7%;
+}
+.slider-item01{
+    background-image: url('../images/gnt-consulting-slider1.jpg');
+}
+.slider-item02{
+    background-image: url('../images/gnt-consulting-slider2.jpg');
+}
+
+/* __SECCIONES__ */
+.sec_general{
+    padding: 80px 0px 0px 0px;
+}
+
+/* __CONT WIDTH__ */
+.w-830{
+    width: 830px;
+    margin: 0 auto;
+}
+
+/* __HOMEPAGE__ */
+#section_quienes_somos{
+    background-color: var(--color-gris-fondo);
+}
+#section_quienes_somos > div{
+    padding-bottom: 60px;
+}
+.extra_img{
+    width: 100%;
+    height: 480px;
+    background-image: url('../images/gnt-banner-quienes-somos.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid var(--color-azul-marino);
+}
+.logos-carousel .item{
+    padding: 80px 0px;
+}
+.logos-carousel .item_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logos-carousel .item_img > img{
+    flex: 1 1 25%;
+}
+
+.tit_carrucel{
+    font-size: 1.5rem;
+    font-family: var(--ff-graphik-medium);
+    color: var(--color-azul-marino);
+}
+.logos-carousel .item img{
+    width: 120px;
+    height: auto;
+}
+
+/* FOOTER */
+.cont_foot{
+    background-color: var(--color-gris-fondo);
+}
+
