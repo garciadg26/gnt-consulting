@@ -4,6 +4,9 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
+        navText : ["<span class='arrow-carroucel arrow-back'></span>","<span class='arrow-carroucel arrow-next'></span>"],
         dots: false,
         responsive:{
             0:{
