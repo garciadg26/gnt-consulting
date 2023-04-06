@@ -64,6 +64,7 @@
 :root{
     --color-white:#ffffff;
     --color-black:#000000;
+    --color-black-grey:#333333;
     --color-gris-fondo:#f2f2f2;
     --color-azul-marino:#121766;
     --ff-graphik-light:'Graphik-Light', Helvetica, Arial, sans-serif;   
@@ -134,6 +135,11 @@ body{
     font-size: 1.8rem;
     color: var(--color-azul-marino);
 }
+.subtit_primero{
+    font-family: var(--ff-graphik-medium);
+    font-size: 1.8rem;
+    color: var(--color-black-grey);
+}
 .subtit_sm{
     font-family: var(--ff-graphik-regular);
     font-size: 1.5rem;
@@ -175,6 +181,9 @@ body{
 }
 .sec_general{
     padding: 80px 0px;
+}
+.sec_general_txt{
+    padding: 0px 0px 60px;
 }
 
 
@@ -351,6 +360,10 @@ body{
 
 
 /* FOOTER */
+#foot{
+    max-width: 1600px;
+    margin: 0 auto;
+}
 .footer_gen{
     padding: 24px;
     background-color: var(--color-white);
@@ -394,6 +407,24 @@ body{
     left: 0;
     width: 100%;
     height: 45vh;
+}
+#sec_parallex_02{
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 48px);
+    height: 700px;
+    overflow: hidden;
+    background-color: var(--color-white);
+    max-width: calc(1600px - 48px);
+    margin: 0 auto;
+}
+#sec_parallex_02 > div{
+    position: absolute;
+    background-size: cover;
+    background-position: 50% 0%!important;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }
 .col_aviso_privacidad{
     text-align: right;
@@ -442,7 +473,7 @@ body{
     margin-bottom: 60px;
 }
 .cont_estr_icon{
-    margin: 8px 0px;
+    margin: 24px 0px 8px;
 }
     /* VENTAJA COMPETITIVA */
 #sec_vent_compt{
@@ -514,6 +545,62 @@ body{
 .text_deco_none:hover{
     text-decoration: none;
 }
+
+/* __FIANZAS__ */
+.sec_txt{
+    text-align: center;
+    margin-top: 114px;
+    background-color: var(--color-white);
+    padding: 60px 0px 30px;
+    border-top: 1px solid var(--color-azul-marino);
+    border-bottom: 1px solid var(--color-azul-marino);
+}
+.list_order_fianzas{
+    padding-left: 0;
+}
+.list_order_fianzas > li{
+    font-family: var(--ff-graphik-medium);
+    color: var(--color-azul-marino);
+    font-size: 1.6rem;
+    margin-bottom: 38px;
+    list-style: none;
+}
+.list_desorder_fianzas > li{
+    font-family: var(--ff-graphik-regular);
+    font-size: 1.6rem;
+}
+.row_subtit{
+    padding: 80px 0px;
+}
+
+
+/* __PREGUNTAS FRECUENTES__ */
+.tit_g{
+    font-size: 3rem;
+    color: var(--color-azul-marino);
+    font-family: var(--ff-graphik-mediumtit_g);
+}
+.txt_pregunta{
+    font-family: var(--ff-graphik-semibold);
+    color: var(--color-azul-marino);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.txt_respuesta{
+    font-family: var(--ff-graphik-regular);
+    font-size: 1.3rem;
+}
+.list_preguntas{
+    
+}
+.list_preguntas li{
+    font-family: var(--ff-graphik-regular);
+    font-size: 1.3rem;
+}
+
+
+
 
     /* SHINE EFFECT */
 .cont_txt_overlay {
@@ -887,5 +974,15 @@ body{
     }
     .cont_txt_mision {
         padding: 30px 0px;
+    }
+    #section_serv_btn .row:nth-child(2) > div{
+        margin-bottom: 40px;
+    }
+    .card_blue_serv{
+        box-shadow: var(--shadow-elevation-medium);
+        
+    }
+    .card_blue_serv img, .card_blue_serv h4{
+        opacity: 1;
     }
 }

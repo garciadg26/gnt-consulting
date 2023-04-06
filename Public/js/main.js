@@ -104,4 +104,10 @@ function menuActive(){
     if(document.URL.includes('servicios.html')){
         header.classList.add('white-color');
     }
+    if(document.URL.includes('fianzas.html')){
+        header.classList.add('white-color');
+    }
+    if(document.URL.includes('preguntas-frecuentes.html')){
+        header.classList.add('white-color');
+    }
 }
