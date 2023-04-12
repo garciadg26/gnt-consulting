@@ -591,9 +591,6 @@ body{
     font-family: var(--ff-graphik-regular);
     font-size: 1.3rem;
 }
-.list_preguntas{
-    
-}
 .list_preguntas li{
     font-family: var(--ff-graphik-regular);
     font-size: 1.3rem;

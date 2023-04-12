@@ -101,13 +101,18 @@ function menuActive(){
         $('.navbar-nav > li:nth-child(2)').addClass("active");
         header.classList.add('white-color');
     }
-    if(document.URL.includes('servicios.html')){
+    if(document.URL.includes('servicios.php') || document.URL.includes('fianzas.php') || document.URL.includes('seguros-individuales.php')){
+        $('.navbar-nav > li').removeClass('active');
+        $('.navbar-nav > li:nth-child(3)').addClass("active");
         header.classList.add('white-color');
     }
     if(document.URL.includes('fianzas.html')){
         header.classList.add('white-color');
     }
     if(document.URL.includes('preguntas-frecuentes.html')){
+        header.classList.add('white-color');
+    }
+    if(document.URL.includes('seguros-individuales.html')){
         header.classList.add('white-color');
     }
 }
