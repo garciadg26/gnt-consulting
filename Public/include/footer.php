@@ -7,16 +7,16 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <h4 class="tit_footer">Más sobre GNT</h4>
-                    <a class="link_footer" href="#">Preguntas frecuentes</a>
+                    <a class="link_footer" href="preguntas-frecuentes.php">Preguntas frecuentes</a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-12 colContacto">
                     <h4 class="tit_footer">Contacto</h4>
                     <a class="link_footer" href="mailto:gntconsulting.mx">contacto@gntconsulting.mx</a><br>
                     <a class="link_footer" href="tel:5513237777">O - (52) 5513237777</a><br><br>
                     <h4 class="tit_footer">Redes Sociales</h4>
-                    <a class="link_footer" href="https://instagram.com/gnt_consulting?igshid=ODM2MWFjZDg=">Instagram</a><br>
-                    <a class="link_footer" href="#">Facebook</a><br>
-                    <a class="link_footer" href="https://www.linkedin.com/company/gntconsulting/">LinkedIn</a>
+                    <a class="link_footer" href="https://instagram.com/gnt_consulting?igshid=ODM2MWFjZDg=" target="_blank">Instagram</a><br>
+                    <a class="link_footer" href="#" target="_blank">Facebook</a><br>
+                    <a class="link_footer" href="https://www.linkedin.com/company/gntconsulting/" target="_blank">LinkedIn</a>
                 </div>
             </div>
             <div class="row legales">
@@ -41,5 +41,5 @@
     <script type="text/javascript" src="Public/js/scrollReveal.min.js"></script>
     
     <!-- MAIN -->
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.13"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.17"></script>
     

@@ -4,6 +4,7 @@ $(document).ready(function(){
     animaPhoto();
     animaPhotoL()
     menuActive();
+    activeMenu();
 });
 
 function scrollHeader(){
@@ -32,6 +33,20 @@ function animaPhoto(){
 
     const hiddenElements =  document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => obeserver.observe(el));
+}
+
+// Script to hide/show menu
+function activeMenu(){
+    var button = document.querySelector('#menu-button');
+    var menu = document.querySelector('#submenu');
+    button.addEventListener('click', function (event) {
+            if (menu.style.display === "" || menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+        );
 }
 
 /* FADE LEFT */
@@ -109,7 +124,13 @@ function menuActive(){
     if(document.URL.includes('fianzas.html')){
         header.classList.add('white-color');
     }
-    if(document.URL.includes('preguntas-frecuentes.html')){
+    if(document.URL.includes('preguntas-frecuentes.php')){
+        $('.navbar-nav > li').removeClass('active');
+        header.classList.add('white-color');
+    }
+    if(document.URL.includes('contacto.php')){
+        $('.navbar-nav > li').removeClass('active');
+        $('.navbar-nav > li:nth-child(4)').addClass("active");
         header.classList.add('white-color');
     }
     if(document.URL.includes('seguros-individuales.html')){

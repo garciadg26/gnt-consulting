@@ -93,10 +93,65 @@
       -0.1px 19.6px 27.9px -0.5px hsl(var(--shadow-color) / 0.3);
 }
 
+
+/* ======= alan ======== */
+.navbar .nav-item .dropdown-menu{
+    display: none;
+    border: 0;
+}
+.navbar .nav-item:hover .dropdown-menu{
+    display: block;
+    background: transparent;
+}
+.navbar .nav-item:hover .dropdown-menu a{
+    color: #fff;
+}
+.navbar .nav-item:hover .dropdown-menu a:hover{
+    background: transparent;
+}
+.navbar .nav-item .dropdown-menu{
+    margin-top:0;
+}
+.accordion .card{
+    border: 0;
+}
+.card-header {
+    background-color: rgba(0,0,0,.0);
+    border-bottom: 0px solid rgba(0,0,0,.125);
+}
+.input{
+    background: #cccccc;
+    padding: 5px 10px;
+    border: 0;
+    width: 100%;
+}
+input[type="submit"]{
+    background: #121766;
+    color: #fff;
+    border: 0;
+    padding: 8px 30px;
+}
+
+
+
+
+
+
+
 body{
     font-size: 16px;
     padding: 0;
     margin: 0;
+}
+
+.blanco{
+    color: #fff;
+}
+.azul{
+    color: #121766;
+}
+.text_deco_none:hover{
+    color: var(--color-white);
 }
 
 /* FONTS */
@@ -205,7 +260,14 @@ body{
     color: var(--color-white);
     font-family: var(--ff-graphik-medium);
     font-size: 1rem;
+    text-decoration: none;
     margin: 0px 18px;
+}
+.dropdown-item{
+    text-decoration: none;
+}
+.dropdown-item:hover{
+    background-color: var(--color-gris-fondo);
 }
 .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:active, .navbar-nav .nav-item .nav-link:focus{
     color: var(--color-white);
@@ -230,6 +292,40 @@ body{
     position: relative;
     color: var(--color-white);
 }
+.nav_item_movil{
+    display: none;
+}
+.nav_item_movil .dropdown-item{
+    color: var(--color-azul-marino);
+    text-align: center;
+}
+#submenu{
+    border: 1px solid var(--color-gris-fondo);
+    border-radius: 6px;
+}
+
+    /* IDIOMA */
+.idioma{
+    margin-top: 14px;
+    width: 88px;
+    height: auto;
+}
+.list_idioma{
+    list-style: none;
+    padding-left: 0;
+}
+.list_idioma li{
+    display: inline-block;
+}
+.list_idioma li a{
+    font-family: var(--ff-graphik-medium);
+    font-size: 1rem;
+    color: var(--color-white);
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+
 
 
     /* ACTIVE */
@@ -266,6 +362,18 @@ body{
     fill: var(--color-azul-marino);
 }
 
+.scroll-header .navbar-nav .nav-item:hover .dropdown-menu{
+    display: block;
+    background: #fff;
+}
+.scroll-header .navbar-nav .nav-item:hover .dropdown-menu a{
+    color: var(--color-azul-marino);
+}
+.scroll-header .list_idioma li a{
+    color: var(--color-azul-marino);
+}
+
+
     /* WHITE-COLOR */
 .white-color{
     background-color: var(--color-white);
@@ -281,6 +389,16 @@ body{
 }
 .white-color #icon_menu_movil path{
     fill: var(--color-azul-marino);
+}
+.white-color .navbar-nav .nav-item:hover .dropdown-menu{
+    display: block;
+    background: #fff;
+}
+.white-color .navbar-nav .nav-item:hover .dropdown-menu a{
+    color: var(--color-azul-marino);
+}
+.white-color .list_idioma li a{
+    color: var(--color-azul-marino);
 }
 
 
@@ -438,7 +556,10 @@ body{
     margin-top: 106px;
 }
 #sec_quienes{
-    background-image: url('../images/gnt-encabezado-quienes-somos.jpg');
+    background: url('../images/gnt-encabezado-quienes-somos.jpg') no-repeat center / cover;
+}
+#sec_contacto{
+    background: url('../images/gnt-contacto.jpg') no-repeat center / cover;
 }
 #sec_mision{
     border-top: 1px solid var(--color-azul-marino);
@@ -524,13 +645,24 @@ body{
     transition: all 0.4s;
     box-shadow: var(--shadow-elevation-low);
 }
+.card_blue_serv--2{
+    min-height: 480px;
+}
+
 .card_blue_serv img{
     opacity: .3;
+    transition: all 0.3s;
+}
+.card_blue_serv--2 img{
+    opacity: 1;
     transition: all 0.3s;
 }
 .card_blue_serv h4{
     opacity: .7;
     transition: all 0.3s;
+}
+.card_blue_serv--2 h4{
+    opacity: 1;
 }
 .card_blue_serv:hover{
     box-shadow: var(--shadow-elevation-high);
@@ -779,6 +911,16 @@ body{
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
 
+.modal-dialog{
+    max-width: 600px;
+}
+.modal-content{
+    background: #f2f2f2;
+}
+.btn--modal{
+    color: #333333;
+}
+
 
 
 
@@ -836,6 +978,12 @@ body{
     }
     .card_ventaja .list_card_v, .card_ventaja .txt_card {
         font-size: 1.2rem;
+    }
+    .nav_item_desktop{
+        display: none;
+    }
+    .nav_item_movil{
+        display: block;
     }
 }
 

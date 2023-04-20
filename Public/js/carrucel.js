@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.logos-carousel').owlCarousel({
         loop:true,
         margin:10,
+        autoplay: true,
         nav:true,
         animateIn: 'fadeIn',
         animateOut: 'fadeOut',
