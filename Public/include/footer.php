@@ -41,5 +41,5 @@
     <script type="text/javascript" src="Public/js/scrollReveal.min.js"></script>
     
     <!-- MAIN -->
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.17"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.26"></script>
     

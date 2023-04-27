@@ -18,7 +18,7 @@
 	    autoplay: true,
 	    margin:0,
 	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
+	    // animateIn: 'zoomIn',
 	    nav:true,
 	    dots: false,
 	    autoplayHoverPause: false,

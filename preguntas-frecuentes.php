@@ -109,33 +109,75 @@
                                 <h5 class="azul">¿Qué tipo de seguros existen? </h5>
                                 <p>Cada tipo de seguro de vida tiene sus propias características y beneficios, por lo que es importante evaluar cuidadosamente sus necesidades y objetivos financieros antes de elegir un seguro de vida adecuado.</p>
                                 <p>Las aseguradoras cuentan con diferentes productos que van desde planes de retiro, educación, protección por fallecimiento, inversiones hasta otros esquemas de ahorro.</p>
-
-                                <h4 class="azul mt-5 mb-3">Seguro de Autos </h4>
-
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left pl-0 pb-0 mb-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h1 class="azul">Seguro de Autos </h1>
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body ml-3">
                                 <h5 class="azul">¿Qué tipo de coberturas existen en autos? </h5>
                                 <p>
                                     Existe 3 tipos de Cobertura: Básica, Limitada y Amplia<br>
-                                    Básica: sólo cubre Responsabilidad Civil <br>
-                                    Limitada: No cubre afectaciones a tu auto en caso de accidente, únicamente cubre robo total y Responsabilidad Civil<br>
-                                    Amplía: La cobertura amplia cubre gastos por daños a terceros y sus bienes, robo total y lesiones o daños materiales. 
+                                    <b>Básica:</b> sólo cubre Responsabilidad Civil <br>
+                                    <b>Limitada:</b> No cubre afectaciones a tu auto en caso de accidente, únicamente cubre robo total y Responsabilidad Civil<br>
+                                    <b>Amplía:</b> La cobertura amplia cubre gastos por daños a terceros y sus bienes, robo total y lesiones o daños materiales. 
                                 </p>
+                                </div>
+                            </div>
+                        </div>
 
-
-                                <h4 class="azul mt-5 mb-3">Seguro de Hogar</h4>
-
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left pl-0 pb-0 mb-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h1 class="azul">Seguro de Hogar </h1>
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body ml-3">
                                 <h5 class="azul">¿Por qué es importante contar con un seguro de hogar? </h5>
                                 <p>Recuerda que la mayoría de la gente no podría volver a construir una propiedad o reponer lo perdido frente a un desastre. </p>
                                 <p>No importa el tipo de vivienda que tengas, tener un seguro para tu hogar es responsabilidad tuya. Recuerda que aunque vivas en departamento o condominio, la administración no pagará nada relacionado a algún daño dentro de tu propiedad, aún cuando el accidente haya sido provocado sin dolo por un externo. </p>
                                 <p>Este tipo de seguros protegen contra robo, incendio, inundación, terremoto entre otras. </p>
+                                </div>
+                            </div>
+                        </div>
 
-
-                                <h4 class="azul mt-5 mb-3">Seguros de Responsabilidad Civil</h4>
-
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left pl-0 pb-0 mb-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <h1 class="azul">Seguros de Responsabilidad Civil </h1>
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body ml-3">
                                 <h5 class="azul">¿Qué significa responsabilidad Civil? </h5>
                                 <p>La responsabilidad civil tiene que ver con el riesgo de provocar daños involuntarios a terceros, ya sea en su persona, su patrimonio o sus posesiones. Te obliga a responder ante esos daños.  Sea de manera cívica y consensuada o por la fuerza legal.</p>
                                 <p>Existen diferentes tipos de RC: profesional, familiar, viajes, mascotas, vehículos. </p>
+                                </div>
+                            </div>
+                        </div>
 
-                                <h4 class="azul mt-5 mb-3">Seguro de Mascotas </h4>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left pl-0 pb-0 mb-0 collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <h1 class="azul">Seguro de Mascotas </h1>
+                                </button>
+                            </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                <div class="card-body ml-3">
 
                                 <h5 class="azul">¿Cuáles son los parámetros de edad para contratar un seguro de mascotas? </h5>
                                 <p>De los 3 meses a los 9 años de edad </p>
@@ -148,7 +190,7 @@
 
                                 <h5 class="azul">¿A qué otros servicios puedo tener acceso?</h5>
                                 <p>Orientación veterinaria telefónica, desparasitación, pipeta antipulgas, vacuna antirrábica, servicio de cremación por enfermedad o accidente. </p>
-
+                                
                                 </div>
                             </div>
                         </div>
@@ -163,3 +205,6 @@
 
 </body>
 </html>
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/819152282?h=67e72bc38c&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/819152282">El viaje financiero de las personas es solitario y complejo, por eso creamos Klopp.</a> from <a href="https://vimeo.com/user194630195">A</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

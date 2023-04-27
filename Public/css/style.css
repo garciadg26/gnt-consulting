@@ -66,7 +66,16 @@
     --color-black:#000000;
     --color-black-grey:#333333;
     --color-gris-fondo:#f2f2f2;
+    --color-azul-claro-opaco:#8ECDF4;
+    --color-azul-claro:#4FC8F2;
     --color-azul-marino:#121766;
+    --color-azul-logo:#04A0D5;
+    --color-verde-azul:#079EA6;
+    --color-azul-fuerte:#1E0C42;
+    --color-morado:#84407B;
+    --color-azul-indigo:#006C94;
+    --color-azul-gris:#556C8C;
+    --color-verde-turquesa:#008B83;
     --ff-graphik-light:'Graphik-Light', Helvetica, Arial, sans-serif;   
     --ff-graphik-light-italic:'Graphik-LightItalic', Helvetica, Arial, sans-serif;   
     --ff-graphik-regular:'Graphik-Regular', Helvetica, Arial, sans-serif;   
@@ -201,6 +210,14 @@ body{
     line-height: 1.8rem;
     color: var(--color-azul-marino);
 }
+.item_contacto{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+#info_contacto h5.azul{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 
 /* SLIDER */
 .tit_slider{
@@ -226,7 +243,7 @@ body{
     background-image: url('../images/gnt-consulting-slider1.jpg');
 }
 .slider-item02{
-    background-image: url('../images/gnt-consulting-slider1.jpg');
+    background-image: url('../images/gnt-consulting-slider2.jpg');
 }
 
 
@@ -350,16 +367,16 @@ body{
     color: var(--color-azul-marino);
 }
 .scroll-header .navbar-nav .active >.nav-link::before{
-    background-color: var(--color-azul-marino);
+    background-color: var(--color-azul-claro);
 }
 .scroll-header #logo_header path{
-    fill: var(--color-azul-marino);
+    fill: var(--color-azul-claro);
 }
 .scroll-header #logo_header{
     width: 150px;
 }
 .scroll-header #icon_menu_movil path{
-    fill: var(--color-azul-marino);
+    fill: var(--color-azul-claro);
 }
 
 .scroll-header .navbar-nav .nav-item:hover .dropdown-menu{
@@ -382,10 +399,10 @@ body{
     color: var(--color-azul-marino);
 }
 .white-color .navbar-nav .active >.nav-link::before{
-    background-color: var(--color-azul-marino);
+    background-color: var(--color-azul-claro);
 }
 .white-color #logo_header path{
-    fill: var(--color-azul-marino);
+    fill: var(--color-azul-claro);
 }
 .white-color #icon_menu_movil path{
     fill: var(--color-azul-marino);
@@ -447,7 +464,7 @@ body{
 }
 
 .logos-carousel .item_img2 img{
-    max-width: 180px!important;
+    max-width: 176px!important;
     height: auto;
 }
     /* ARROW */
@@ -539,7 +556,7 @@ body{
 #sec_parallex_02 > div{
     position: absolute;
     background-size: cover;
-    background-position: 50% 0%!important;
+    background-position: 50% 50%!important;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -548,6 +565,12 @@ body{
     text-align: right;
 }
 
+/* __NOSOTROS__ */
+#somos{
+    position: relative;
+    top: -100px;
+    width: 100%;
+}
 
 /* __QUIENES SOMOS__ */
 .sec_encabezado{
@@ -559,7 +582,10 @@ body{
     background: url('../images/gnt-encabezado-quienes-somos.jpg') no-repeat center / cover;
 }
 #sec_contacto{
-    background: url('../images/gnt-contacto.jpg') no-repeat center / cover;
+    background: url('../images/gnt-contacto.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 #sec_mision{
     border-top: 1px solid var(--color-azul-marino);
@@ -704,6 +730,61 @@ body{
 .row_subtit{
     padding: 80px 0px;
 }
+.background_fianzas{
+    background-image: url('../images/gnt-back-fianzas.jpg');
+    background-position: center center;
+}
+.card_fianza{
+    box-sizing: border-box;
+    min-height: 300px;
+    padding: 24px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.col1_card_fianza > div:nth-child(1) div.card_fianza{
+    background-color: var(--color-azul-logo);
+}
+.col1_card_fianza > div:nth-child(2) div.card_fianza{
+    background-color: var(--color-verde-azul);
+}
+.col1_card_fianza > div:nth-child(3) div.card_fianza{
+    background-color: var(--color-azul-fuerte);
+}
+.col2_card_fianza > div:nth-child(1) div.card_fianza{
+    background-color: var(--color-morado);
+}
+.col2_card_fianza > div:nth-child(2) div.card_fianza{
+    background-color: var(--color-azul-marino);
+}
+.col2_card_fianza > div:nth-child(3) div.card_fianza{
+    background-color: var(--color-azul-indigo);
+}
+.col3_card_fianza > div:nth-child(1) div.card_fianza{
+    background-color: var(--color-azul-gris);
+}
+.col3_card_fianza > div:nth-child(2) div.card_fianza{
+    background-color: var(--color-verde-turquesa);
+}
+.tit_card_fianza{
+    font-family: var(--ff-graphik-semibold);
+    color: var(--color-white);
+
+}
+.list_card_fianza{
+    font-family: var(--ff-graphik-regular);
+    color: var(--color-white);
+    text-align: left;
+}
+.list_card_fianza li{
+    margin-top: 6px;
+}
+
 
 
 /* __PREGUNTAS FRECUENTES__ */
@@ -728,7 +809,11 @@ body{
     font-size: 1.3rem;
 }
 
-
+    /* __CONTACTO__ */
+#formulario label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 
     /* SHINE EFFECT */
@@ -786,6 +871,65 @@ body{
       -webkit-transition: all 0.6s ease-in-out;
          -moz-transition: all 0.6s ease-in-out;
               transition: all 0.6s ease-in-out;
+}
+
+
+
+/* __MENSAJE DE ERROR__ */
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+.formulario__validacion-estado {
+    position: absolute;
+    right: 28px;
+    top: 42px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario__mensaje, .formulario__captcha{
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.formulario__mensaje-activo {
+	display: block;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
 }
 
 
@@ -985,6 +1129,11 @@ body{
     .nav_item_movil{
         display: block;
     }
+    .idioma{
+        position: absolute;
+        right: 120px;
+        top: 24px;
+    }
 }
 
 
@@ -1129,5 +1278,36 @@ body{
     }
     .card_blue_serv img, .card_blue_serv h4{
         opacity: 1;
+    }
+    .idioma{
+        right: 80px;
+        top: 24px;
+    }
+    .slider-item01{
+        background-position: 80% center;
+    }
+    .slider-item02{
+        background-position: 75% center;
+    }
+    #logo_header, .white-color #logo_header{
+        width: 140px;
+    }
+    .scroll-header #logo_header {
+        width: 120px;
+    }
+    #sec_contacto{
+        background: url('../images/gnt-contacto.jpg');
+        background-repeat: no-repeat;
+        background-position: 80% center;
+        background-size: cover;
+    }
+    #sec_quienes{
+        background: url('../images/gnt-encabezado-quienes-somos.jpg');
+        background-repeat: no-repeat;
+        background-position: 25% center;
+        background-size: cover;
+    }
+    #somos {
+        top: -90px;
     }
 }

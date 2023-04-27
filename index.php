@@ -3,7 +3,6 @@
         $title = "GNT Consulting Seguros y Finanzas";
         include_once 'Public/include/head.php';
     ?>
-
 </head>
 <body>
     <?php include_once "Public/include/nav.php"; ?>
@@ -15,8 +14,8 @@
             <div class="row no-gutters slider-text js-fullheight align-items-end">
                 <div class="col-md-12 ftco-animate">
                     <div class="cont_text w-100">
-                        <h1 class="tit_slider">La mejor manera <br> de predecir el futuro <br> es creándolo </h1>
-                        <h3 class="author_slider">- Peter Drucker</h3><br>
+                        <h1 class="tit_slider animated fadeInDown" style="animation-delay:.2s;">La mejor manera <br> de predecir el futuro <br> es creándolo </h1>
+                        <h3 class="author_slider animated fadeInUp" style="animation-delay:.6s;">- Peter Drucker</h3><br>
                     </div>
                 </div>
             </div>
@@ -27,17 +26,16 @@
             <div class="row slider-text js-fullheight align-items-end">
                 <div class="col-md-12 ftco-animate">
                     <div class="cont_text w-100">
-                        <h1 class="tit_slider">La mejor manera <br> de predecir el futuro <br> es creándolo </h1>
+                        <h1 class="tit_slider animated fadeInRight">La mejor manera <br> de predecir el futuro <br> es creándolo </h1>
                         <h3 class="author_slider">- Peter Drucker</h3><br>
                     </div>
                 </div>
             </div>
         </div>
-
     </div><!-- FIN SLIDER -->
 
     <!-- SCROLL REVEAL -->
-    <a href="#about" id="icon_scroll">
+    <a href="#somos" id="icon_scroll" class="btn_scroll">
         <svg class="arrows">
             <path class="a1" d="M10 0 L30 22 L50 0"></path>
             <path class="a2" d="M10 16 L30 38 L50 16"></path>
@@ -46,6 +44,7 @@
     </a>
   
     <!-- QUIENES SOMOS -->
+    <div id="somos"></div>
     <section id="section_quienes_somos" class="sec_somos">
         <div class="container">
             <div class="row">
@@ -100,7 +99,6 @@
                         <img src="Public/images/logo-mp-marketing-group-p.png" alt="Logo cp marketing group">
                         <img src="Public/images/logo-educacion-para-compartir.jpg" alt="Educación para compartir">
                         <img src="Public/images/logo-atxk.jpg" alt="Logo atxk">
-                        <img src="Public/images/svg/logo-bupa.svg" alt="Logo Bupa">
                         <img src="Public/images/svg/logo-demant-s.svg" alt="Logo Demant">
                         <img src="Public/images/svg/logo-securitas-s.svg" alt="Logo securitas">
                         <img src="Public/images/logo-tbt-p.png" alt="Logo tbt">
