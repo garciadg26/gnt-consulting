@@ -36,7 +36,6 @@ function scrollBtn(){
 
 }
 
-
 function scrollHeader(){
     const header = document.getElementById("menu_dark");
     if(this.scrollY >= 20){
@@ -141,24 +140,21 @@ function animationScroll(){
 
 function menuActive(){
     const header = document.getElementById("menu_dark");
-    if(document.URL.includes('quienes-somos.php')){
+    if(document.URL.includes('quienes-somos.php') || document.URL.includes('en/about-us.php') ){
         $('.navbar-nav > li').removeClass('active');    
         $('.navbar-nav > li:nth-child(2)').addClass("active");
         header.classList.add('white-color');
     }
-    if(document.URL.includes('servicios.php') || document.URL.includes('fianzas.php') || document.URL.includes('seguros-individuales.php')){
+    if(document.URL.includes('servicios.php') || document.URL.includes('fianzas.php') || document.URL.includes('seguros-individuales.php') || document.URL.includes('services.php') || document.URL.includes('bonds.php') || document.URL.includes('individual-insurance.php')){
         $('.navbar-nav > li').removeClass('active');
         $('.navbar-nav > li:nth-child(3)').addClass("active");
         header.classList.add('white-color');
     }
-    if(document.URL.includes('fianzas.html')){
-        header.classList.add('white-color');
-    }
-    if(document.URL.includes('preguntas-frecuentes.php')){
+    if(document.URL.includes('preguntas-frecuentes.php') || document.URL.includes('faqs.php')){
         $('.navbar-nav > li').removeClass('active');
         header.classList.add('white-color');
     }
-    if(document.URL.includes('contacto.php')){
+    if(document.URL.includes('contacto.php') || document.URL.includes('contact.php')){
         $('.navbar-nav > li').removeClass('active');
         $('.navbar-nav > li:nth-child(5)').addClass("active");
         header.classList.add('white-color');

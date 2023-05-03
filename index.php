@@ -5,7 +5,9 @@
     ?>
 </head>
 <body>
-    <?php include_once "Public/include/nav.php"; ?>
+    <div id="home_dark">
+        <?php include_once "Public/include/nav.php"; ?>
+    </div>
 
     <!-- SLIDER -->
     <div class="home-slider owl-carousel js-fullheight">
@@ -122,6 +124,21 @@
     <script tyoe="text/javascript" src="Public/js/slider.js"></script>
 
     <script type="text/javascript" src="Public/js/parallex.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            scrollHome();
+        });
+        function scrollHome(){
+            const header = document.getElementById("home_dark");
+            if(this.scrollY >= 20){
+                header.classList.remove('logo-svg');
+            } else{
+                header.classList.add('logo-svg');
+            }
+        }
+        window.addEventListener('scroll', scrollHome);
+    </script>
 
 </body>
 </html>

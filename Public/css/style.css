@@ -76,6 +76,9 @@
     --color-azul-indigo:#006C94;
     --color-azul-gris:#556C8C;
     --color-verde-turquesa:#008B83;
+    --color-naranja-rojo:#903737;
+    --color-morado-violeta:#623284;
+    --color-rosa-tenue:#A22D6C;
     --ff-graphik-light:'Graphik-Light', Helvetica, Arial, sans-serif;   
     --ff-graphik-light-italic:'Graphik-LightItalic', Helvetica, Arial, sans-serif;   
     --ff-graphik-regular:'Graphik-Regular', Helvetica, Arial, sans-serif;   
@@ -296,11 +299,14 @@ body{
 .navbar-light .navbar-toggler{
     border-color: rgba(0,0,0,0);
 }
-#logo_header{
+#menu_dark > a svg{
     display: inline-block;
     width: 180px;
     height: auto;
     transition: all 0.6s;
+}
+.logo-svg a.navbar-brand svg path{
+    fill: var(--color-white);
 }
 #logo_header path{
     fill: var(--color-white);
@@ -369,7 +375,13 @@ body{
 .scroll-header .navbar-nav .active >.nav-link::before{
     background-color: var(--color-azul-claro);
 }
-.scroll-header #logo_header path{
+.scroll-header #logo_header path:nth-child(1){
+    fill: #99999B;
+}
+.scroll-header #logo_header path:nth-child(2){
+    fill: #99999B;
+}
+.scroll-header #logo_header path:nth-child(3){
     fill: var(--color-azul-claro);
 }
 .scroll-header #logo_header{
@@ -401,9 +413,15 @@ body{
 .white-color .navbar-nav .active >.nav-link::before{
     background-color: var(--color-azul-claro);
 }
-.white-color #logo_header path{
-    fill: var(--color-azul-claro);
+/* .white-color #logo_header path:nth-child(1){
+    fill: #99999B;
 }
+.white-color #logo_header path:nth-child(2){
+    fill: #99999B;
+}
+.white-color #logo_header path:nth-child(3){
+    fill: var(--color-azul-claro);
+} */
 .white-color #icon_menu_movil path{
     fill: var(--color-azul-marino);
 }
@@ -543,7 +561,7 @@ body{
     width: 100%;
     height: 45vh;
 }
-#sec_parallex_02{
+#sec-parallax{
     position: relative;
     margin: 0 auto;
     width: calc(100% - 48px);
@@ -553,13 +571,11 @@ body{
     max-width: calc(1600px - 48px);
     margin: 0 auto;
 }
-#sec_parallex_02 > div{
-    position: absolute;
+#sec-parallax > div{
     background-size: cover;
-    background-position: 50% 50%!important;
-    left: 0;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .col_aviso_privacidad{
     text-align: right;
@@ -635,7 +651,7 @@ body{
     padding: 20px;
     border-radius: 22px;
     background-color: var(--color-white);
-    min-height: 414px;
+    min-height: 449px;
 }
 .card_tit{
     color: #121766;
@@ -770,6 +786,15 @@ body{
 }
 .col3_card_fianza > div:nth-child(2) div.card_fianza{
     background-color: var(--color-verde-turquesa);
+}
+.col3_card_fianza > div:nth-child(3) div.card_fianza{
+    background-color: var(--color-naranja-rojo);
+}
+.col4_card_fianza > div:nth-child(1) div.card_fianza{
+    background-color: var(--color-morado-violeta);
+}
+.col4_card_fianza > div:nth-child(2) div.card_fianza{
+    background-color: var(--color-rosa-tenue);
 }
 .tit_card_fianza{
     font-family: var(--ff-graphik-semibold);
@@ -1309,5 +1334,8 @@ body{
     }
     #somos {
         top: -90px;
+    }
+    #menu_dark > a svg{
+        width: 140px;
     }
 }

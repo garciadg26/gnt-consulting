@@ -205,6 +205,3 @@
 
 </body>
 </html>
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/819152282?h=67e72bc38c&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-<p><a href="https://vimeo.com/819152282">El viaje financiero de las personas es solitario y complejo, por eso creamos Klopp.</a> from <a href="https://vimeo.com/user194630195">A</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

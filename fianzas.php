@@ -89,7 +89,7 @@
     </section>
 
     <!-- IMG FIANZAS -->
-    <section id="sec_parallex_02" class="sec_general">
+    <section id="sec-parallax" class="sec_general">
         <div class="background_fianzas"></div>
     </section>
 

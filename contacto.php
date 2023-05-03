@@ -84,10 +84,8 @@
                     <a class="h5 azul" href="mailto:contacto@gntconsulting.mx">contacto@gntconsulting.mx</a>
                     <hr style="opacity: 1; background: #121766">
                     <h5 class="azul">Oficina</h5>
-                    <a href="tel:+525513237777" class="azul item_contacto">+52 (551) 323 7777</a><br>
-                    <h5 class="azul">Teléfonos</h5>
-                    <a href="tel:+525513237777" class="azul item_contacto">+52 (552) 561 5449</a><br>
-                    <a href="tel:+525513237777" class="azul item_contacto">+52 (552) 299 9771</a>
+                    <a href="tel:+525525615449" class="azul item_contacto">+52 (552) 561 5449</a><br>
+                    <a href="tel:+525522999771" class="azul item_contacto">+52 (552) 299 9771</a>
                     <hr style="opacity: 1; background: #121766">
                     <h5 class="azul">Redes Sociales</h5>
                     <a href="https://www.instagram.com/gnt_consulting/?igshid=ODM2MWFjZDg%3D" target="_blank"><img src="Public/images/gnt---instagram.svg" width="40"></a>

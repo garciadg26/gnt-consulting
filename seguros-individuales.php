@@ -156,7 +156,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/gnt-gastos-medicos-mayores.jpg" alt="">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/vida.jpg" alt="">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/Planes-de-Ahorro.jpg" alt="">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -218,7 +218,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/Seguro-de-Persona-Clave.jpg" alt="">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -239,7 +239,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/Seguro-de-Hogar.jpg" alt="">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -275,7 +275,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/Seguros-para-Empresas.jpg" class="w-100">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -304,7 +304,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/Seguro-de-Mascotas.jpg" class="w-100">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -324,7 +324,7 @@
                         <hr>
                         <img class="img-fluid" src="Public/images/Seguro-de-autos.jpg" class="w-100">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>
@@ -350,7 +350,7 @@
                         <h>
                         <img class="img-fluid" src="Public/images/Seguro-de-Viaje.jpg" class="w-100">
                         <hr>
-                        <a href="#" class="btn--modal">¿Quiéres más información? Da click aquí</a>
+                        <a href="contacto.php" class="btn--modal">¿Quiéres más información? Da click aquí</a>
                     </div>
                 </div>
             </div>

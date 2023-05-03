@@ -7,9 +7,11 @@
         $posEn = strpos($url_actual, $en);
         if($posEn === false){
             include_once('config/config.php');
+            include_once('Public/include/rutas.php');
             // echo "[español - head]";
         } else{
             include_once('../config/config.php');
+            include_once('../Public/include/rutas.php');
             // echo "[inglés - head]";
         }
     ?>
@@ -20,7 +22,8 @@
 
     <link rel="stylesheet" href="<?php echo constant('URL') ?>Public/css/bootstrap.min.css?ver=1.1.10">
     <link rel="stylesheet" href="<?php echo constant('URL') ?>Public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo constant('URL') ?>Public/css/style.css?ver=1.1.25">
+    <link rel="stylesheet" href="<?php echo constant('URL') ?>Public/css/style.css?ver=1.1.30">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="<?php echo constant('URL') ?>Public/css/animate.css">
+    
