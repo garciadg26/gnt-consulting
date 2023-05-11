@@ -1,0 +1,7 @@
+RewriteCond %{HTTP_HOST} gntconsulting\.mx [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://gntconsulting.mx/$1 [R,L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

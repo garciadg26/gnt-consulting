@@ -8,7 +8,7 @@
 
     <!-- FIANZAS -->
     <section id="sec_fianzas" class="sec_txt">
-        <h1 class="tit_primario">Preguntas Frecuentes</h1>
+        <h1 class="tit_primario">Frequent Questions</h1>
     </section>
 
 

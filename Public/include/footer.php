@@ -56,7 +56,7 @@
                     <h6 class="txt_legales">© 2023 GNT Consulting / <span>Derechos Reservados</span></h6>
                 </div>
                 <div class="col-md-6 col_aviso_privacidad">
-                    <a class="link_footer" href="#">Aviso de privacidad</a>
+                    <a class="link_footer" href="aviso-privacidad.php">Aviso de privacidad</a>
                 </div>
             </div>
         </div>

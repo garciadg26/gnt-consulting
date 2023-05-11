@@ -150,7 +150,7 @@ function menuActive(){
         $('.navbar-nav > li:nth-child(3)').addClass("active");
         header.classList.add('white-color');
     }
-    if(document.URL.includes('preguntas-frecuentes.php') || document.URL.includes('faqs.php')){
+    if(document.URL.includes('preguntas-frecuentes.php') || document.URL.includes('faqs.php') || document.URL.includes('aviso-privacidad.php')){
         $('.navbar-nav > li').removeClass('active');
         header.classList.add('white-color');
     }

@@ -1,6 +1,11 @@
-<?php
+    <?php
+        $title = "Contact | GNT Consulting Seguros y Finanzas";
         include_once "../Public/include/head.php";
     ?>
+    <!-- Google Captcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="../Public/css/ionicons.min.css">
 </head>
 <body>
     <?php include_once "../Public/include/nav.php" ?>
@@ -73,6 +78,11 @@
                                 <div class="formulario__mensaje" id="formulario__mensaje">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Please fill out the form correctly. </p>
                                 </div>
+                                <div class="formulario__captcha" id="formulario__mensaje-captcha">
+                                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Captcha no verificado. </p>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6LeVMPIlAAAAAEJsJeChW4uYmCtoEJC4PrjIw5Qk"></div>
+                                <br>
                                 <input type="submit" value="Submit">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Form sent successfully!</p>
                             </div>
@@ -83,8 +93,6 @@
                     <h5 class="azul">Email</h5>
                     <a class="h5 azul" href="mailto:contacto@gntconsulting.mx">contacto@gntconsulting.mx</a>
                     <hr style="opacity: 1; background: #121766">
-                    <!-- <h5 class="azul">Oficina</h5>
-                    <a href="tel:+525513237777" class="azul item_contacto">+52 (551) 323 7777</a><br> -->
                     <h5 class="azul">Office</h5>
                     <a href="tel:+525525615449" class="azul item_contacto">+52 (552) 561 5449</a><br>
                     <a href="tel:+525522999771" class="azul item_contacto">+52 (552) 299 9771</a>
@@ -92,7 +100,7 @@
                     <h5 class="azul">Social Media</h5>
                     <a href="https://www.instagram.com/gnt_consulting/?igshid=ODM2MWFjZDg%3D" target="_blank"><img src="../Public/images/gnt---instagram.svg" width="40"></a>
                     <a href="" target="_blank"><img src="../Public/images/gnt---facebook.svg" width="40"></a>
-                    <a href="https://www.linkedin.com/company/gntconsulting/?original_referer=http%3A%2F%2Flocalhost%3A8080%2F" target="_blank"><img src="../Public/images/gnt---linkedin.svg" width="40"></a>
+                    <!-- <a href="https://www.linkedin.com/company/gntconsulting/?original_referer=http%3A%2F%2Flocalhost%3A8080%2F" target="_blank"><img src="../Public/images/gnt---linkedin.svg" width="40"></a> -->
                 </div>
             </div>
         </div>
@@ -100,6 +108,6 @@
 
     <?php include_once "../Public/include/footer.php"; ?>
 
-    <script type="" src="Public/js/form_contacto.js?ver=1.1.12"></script>
+    <script type="" src="../Public/js/form_contact_eng.js?ver=1.1.13"></script>
 </body>
 </html>

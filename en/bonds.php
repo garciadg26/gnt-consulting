@@ -1,4 +1,5 @@
     <?php
+        $title = "Bonds | GNT Consulting Seguros y Finanzas";
         include_once "../Public/include/head.php";
     ?>
 </head>

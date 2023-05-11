@@ -1,7 +1,9 @@
     <?php
-        $title = "Quienes somos | GNT Consulting Seguros y Finanzas";
+        $title = "Contacto | GNT Consulting Seguros y Finanzas";
         include_once "Public/include/head.php";
     ?>
+    <!-- Google Captcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- ICONS -->
     <link rel="stylesheet" href="Public/css/ionicons.min.css">
 </head>
@@ -62,7 +64,7 @@
                                         <input type="email" class="input" name="emailINP" id="emailINP">
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
-                                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 12 dígitos.</p>
+                                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
                                 </div>
                             </div>
                             <div class="col-12 mb-4">
@@ -70,9 +72,18 @@
                                 <textarea class="input" name="msn" id="msn" cols="30" rows="7"></textarea>
                             </div>
                             <div class="col-12 mb-4">
+                                <input type="checkbox" name="ck_btn" id="ck_btn" required>
+                                <label for="ck_btn">He leído el <a href="aviso-privacidad.php" style="color:#121766;">aviso de privacidad</a></label>
+                            </div>
+                            <div class="col-12 mb-4">
                                 <div class="formulario__mensaje" id="formulario__mensaje">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor llena el formulario correctamente. </p>
                                 </div>
+                                <div class="formulario__captcha" id="formulario__mensaje-captcha">
+                                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Captcha no verificado. </p>
+                                </div>
+                                <div class="g-recaptcha" data-sitekey="6LeVMPIlAAAAAEJsJeChW4uYmCtoEJC4PrjIw5Qk"></div>
+                                <br>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                             </div>
@@ -90,7 +101,7 @@
                     <h5 class="azul">Redes Sociales</h5>
                     <a href="https://www.instagram.com/gnt_consulting/?igshid=ODM2MWFjZDg%3D" target="_blank"><img src="Public/images/gnt---instagram.svg" width="40"></a>
                     <a href="" target="_blank"><img src="Public/images/gnt---facebook.svg" width="40"></a>
-                    <a href="https://www.linkedin.com/company/gntconsulting/?original_referer=http%3A%2F%2Flocalhost%3A8080%2F" target="_blank"><img src="Public/images/gnt---linkedin.svg" width="40"></a>
+                    <!-- <a href="https://www.linkedin.com/company/gntconsulting/?original_referer=http%3A%2F%2Flocalhost%3A8080%2F" target="_blank"><img src="Public/images/gnt---linkedin.svg" width="40"></a> -->
                 </div>
             </div>
         </div>

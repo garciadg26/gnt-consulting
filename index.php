@@ -2,6 +2,7 @@
     <?php
         $title = "GNT Consulting Seguros y Finanzas";
         include_once 'Public/include/head.php';
+        include_once 'Public/include/conectar.php';
     ?>
 </head>
 <body>
@@ -11,29 +12,32 @@
 
     <!-- SLIDER -->
     <div class="home-slider owl-carousel js-fullheight">
-        <!-- ITEM 01 -->
-        <div class="slider-item js-fullheight slider-item01">
-            <div class="row no-gutters slider-text js-fullheight align-items-end">
-                <div class="col-md-12 ftco-animate">
-                    <div class="cont_text w-100">
-                        <h1 class="tit_slider animated fadeInDown" style="animation-delay:.2s;">La mejor manera <br> de predecir el futuro <br> es creándolo </h1>
-                        <h3 class="author_slider animated fadeInUp" style="animation-delay:.6s;">- Peter Drucker</h3><br>
+        <?php 
+            $datos=mysqli_query($conexion, "SELECT * from gnt_slide where visible='si' order by id_slide asc");
+            if(mysqli_num_rows($datos)>0){
+                $n=0;
+                //RECORREMOS EL ARRAY
+                while($datos2=mysqli_fetch_array($datos)){
+                    $sql = "SELECT MIN(id_slide) as minimo from gnt_slide where visible='si'";
+                    $result = mysqli_query($conexion, $sql);
+                    @$row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+                    @$minimo=$row['minimo'];
+                ?>
+                    <div class="slider-item slider-item<?php echo ++$n ?> js-fullheight" style="background-image:url('Public/images/<?php echo $datos2['imagen'] ?>');">
+                        <div class="row no-gutters slider-text js-fullheight align-items-end">
+                            <div class="col-md-12 ftco-animate">
+                                <div class="cont_text w-100">
+                                    <span class="tit_slider animated fadeInDown" style="animation-delay:.2s;"><?php echo $datos2['titulo'] ?></span>
+                                    <!-- La mejor manera <br> de predecir el futuro <br> es creándolo  -->
+                                    <!-- <h3 class="author_slider animated fadeInUp" style="animation-delay:.6s;">- Peter Drucker</h3><br> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ITEM 02 -->
-        <div class="slider-item js-fullheight slider-item02">
-            <div class="row slider-text js-fullheight align-items-end">
-                <div class="col-md-12 ftco-animate">
-                    <div class="cont_text w-100">
-                        <h1 class="tit_slider animated fadeInRight">La mejor manera <br> de predecir el futuro <br> es creándolo </h1>
-                        <h3 class="author_slider">- Peter Drucker</h3><br>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <?php
+                }
+            }
+        ?>
     </div><!-- FIN SLIDER -->
 
     <!-- SCROLL REVEAL -->
@@ -77,24 +81,35 @@
                 <div class="item">
                     <h1 class="tit_carrucel text-center">PRINCIPALES ALIANZAS</h1>
                     <div class="item_img">
-                        <img class="" src="Public/images/svg/logo-gmx-seguros.svg" alt="logo MX Seguros">    
-                        <img class="" src="Public/images/svg/logo-gnp-seguros.svg" alt="logo GNT Seguros">
-                        <img class="" src="Public/images/svg/logo-liberty-seguros.svg" alt="logo Liberty Seguros">
-                        <img class="" src="Public/images/svg/logo-axa-seguros.svg" alt="Seguros Axa">
-                        <img class="" src="Public/images/svg/logo-metlife-seguros.svg" alt="Seguros Metlife">
-                        <img class="" src="Public/images/svg/logo-sofimex.svg" alt="Seguros Sofimex">
-                        <img class="" src="Public/images/svg/logo-mapfre.svg" alt="Logo Mapfre">
-                        <img class="" src="Public/images/svg/logo-bupa.svg" alt="Logo Bupa">
-                        <img class="" src="Public/images/svg/logo-aserta.svg" alt="Logo Aserta">
-                        <img class="" src="Public/images/svg/Logo-seguros-atlas.svg" alt="Logo Seguro Atlas">
-                        <img class="" src="Public/images/svg/logo-chubb.svg" alt="Logo Chubb">
-                        <img class="" src="Public/images/svg/logo-qualitas.svg" alt="Logo Qualitas">
+                        <?php 
+                            $datos=mysqli_query($conexion, "SELECT * from gnt_alianzas where visible='si' order by id_alianzas asc");
+                            if(mysqli_num_rows($datos)>0){
+                                while($datos2=mysqli_fetch_array($datos)){
+                                    ?>
+                                        <img class="" src="Public/images/svg/<?php echo $datos2['imagen'] ?>" alt="">
+                                    <?php
+                                }
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="item">
                     <h1 class="tit_carrucel text-center">NUESTROS CLIENTES</h1>
                     <div class="item_img2">
-                        <img src="Public/images/svg/logo-dentalia-s.svg" alt="logo dentalia">    
+                        <?php 
+                            $datos=mysqli_query($conexion, "SELECT * from gnt_clientes where visible='si' order by id_clientes asc");
+                            if(mysqli_num_rows($datos)>0){
+                                while($datos2=mysqli_fetch_array($datos)){
+                                    ?>
+                                        <img src="Public/images/svg/<?php echo $datos2['imagen']?>" alt="">
+                                    <?php
+                                }
+                            }
+                        
+                        ?>
+
+
+                        <!-- <img src="Public/images/svg/logo-dentalia-s.svg" alt="logo dentalia">    
                         <img src="Public/images/svg/logo-diebold-s.svg" alt="logo GNT Seguros">
                         <img src="Public/images/logo-petstart-p.png" alt="logo Liberty petstart">
                         <img src="Public/images/svg/logo-iberia-s.svg" alt="logo iberia">
@@ -110,7 +125,7 @@
                         <img src="Public/images/Logo-mas-manny-aviations-services.jpg" alt="Logo mas manny aviations services">
                         <img src="Public/images/svg/logo-lufthansa-s.svg" alt="Logo lufthansa">
                         <img src="Public/images/logo-lapi-laboratorio-medico-p.png" alt="Logo lapi laboratorio médico">
-                        <img src="Public/images/logo-tgc.jpg" alt="Logo tgc">
+                        <img src="Public/images/logo-tgc.jpg" alt="Logo tgc"> -->
                     </div>
                 </div>
             </div>
@@ -121,7 +136,7 @@
 
     <script tyoe="text/javascript" src="Public/js/owl.carousel.min.js"></script>
     <script tyoe="text/javascript" src="Public/js/carrucel.js"></script>
-    <script tyoe="text/javascript" src="Public/js/slider.js"></script>
+    <script tyoe="text/javascript" src="Public/js/slider.js?ver=1.1.11"></script>
 
     <script type="text/javascript" src="Public/js/parallex.js"></script>
 

@@ -1,6 +1,7 @@
 <?php 
 
-    $raiz = '/gnt-consulting/'; //cambiar variable
+    // $raiz = '/gnt-consulting/'; //cambiar variable
+    $raiz = '/'; //cambiar variable
     // $raiz = '/test/gnt/'; //cambiar variable
     $Ini = '/index.php';
     $enInicio = 'en/index.php';

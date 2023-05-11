@@ -1,4 +1,5 @@
-<?php
+    <?php
+        $title = "Services | GNT Consulting Seguros y Finanzas";
         include_once "../Public/include/head.php";
     ?>
 </head>

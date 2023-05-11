@@ -56,18 +56,18 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', e=>{
     e.preventDefault();
 
-    // //VALIDAMOS SI SE PRECIONO EL CAPTCHA
-    // var response = grecaptcha.getResponse();
+    //VALIDAMOS SI SE PRECIONO EL CAPTCHA
+    var response = grecaptcha.getResponse();
 
-    // if(response.length == 0){
-    //     //NO VERIFICADO
-    //     document.getElementById('formulario__mensaje-captcha').classList.add('formulario__mensaje-activo');
-    //     setTimeout(() => {
-    //         document.getElementById('formulario__mensaje-captcha').classList.remove('formulario__mensaje-activo');
-    //     }, 5000);
-    // } else {
+    if(response.length == 0){
+        //NO VERIFICADO
+        document.getElementById('formulario__mensaje-captcha').classList.add('formulario__mensaje-activo');
+        setTimeout(() => {
+            document.getElementById('formulario__mensaje-captcha').classList.remove('formulario__mensaje-activo');
+        }, 5000);
+    } else {
         //VERIFICADO
-        // const terminos = document.getElementById('terminos');
+        const terminos = document.getElementById('terminos');
         if(campos.nombreINP && campos.emailINP && campos.telefonoINP){
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
@@ -121,7 +121,7 @@ formulario.addEventListener('submit', e=>{
             }, 5000);
         }
         //alert("Captcha verificado");
-    // }
+    }
 
 
 });

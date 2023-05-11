@@ -223,10 +223,11 @@ body{
 }
 
 /* SLIDER */
-.tit_slider{
+.tit_slider p{
     font-family: var(--ff-graphik-light);
     color: var(--color-white);
-    font-size: 5vw;
+    font-size: 4vw;
+    line-height: 4vw;
 }
 .author_slider{
     font-family: var(--ff-graphik-light-italic);
@@ -235,7 +236,7 @@ body{
 }
 .cont_text{
     margin-left: 4%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
 }
 .slider-item{
     background-position: center center;
@@ -1095,6 +1096,13 @@ body{
 
 
     /* RESPONSIVE <= 1200 */
+@media screen and (max-width: 1366px){
+    .tit_slider p{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+}
+    /* RESPONSIVE <= 1200 */
 @media screen and (max-width: 1200px){
     .w-830{
         width: 100%;
@@ -1159,13 +1167,17 @@ body{
         right: 120px;
         top: 24px;
     }
+    .tit_slider p{
+        font-size: 6vw;
+        line-height: 6vw;
+    }
 }
 
 
 
     /* RESPONSIVE <= 768 */
 @media screen and (max-width: 768px){
-    .tit_slider{
+    .tit_slider p{
         font-size: 8vw;
     }
     .author_slider{
@@ -1246,7 +1258,7 @@ body{
 
     /* RESPONSIVE <= 560 */
 @media screen and (max-width: 560px){
-    .tit_slider{
+    .tit_slider p{
         font-size: 9vw;
     }
     .author_slider{
@@ -1308,10 +1320,10 @@ body{
         right: 80px;
         top: 24px;
     }
-    .slider-item01{
+    .slider-item1{
         background-position: 80% center;
     }
-    .slider-item02{
+    .slider-item2{
         background-position: 75% center;
     }
     #logo_header, .white-color #logo_header{
